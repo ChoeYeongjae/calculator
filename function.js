@@ -3,15 +3,9 @@ var res;
 function compute(f){
  //연산자 함수이용
 
- if(f.result.value == 0){
-  res = eval(f.text.value);
- }
- else{
-   return false;
- }
- //결과값 도출
-  f.result.value += res;
-
+ res = eval(f.text.value);
+ f.result.value = res;
+ f.text.value = "";
 }
 function compute1(f){
 
