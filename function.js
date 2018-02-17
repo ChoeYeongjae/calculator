@@ -1,101 +1,111 @@
 var res;
 //매개변수를이용
-function compute(f) {
-    //연산자 함수이용
-    res            = eval(f.text.value);
-    //결과값 도출
-    f.result.value += res;
+function compute(f){
+ //연산자 함수이용
+
+ if(f.result.value == 0){
+  res = eval(f.text.value);
+ }
+ else{
+   return false;
+ }
+ //결과값 도출
+  f.result.value += res;
+
 }
-function compute1(f) {
+function compute1(f){
 
-    var res = 1;
+ var res = 1;
 
-    f.text.value += res;
+  f.text.value += res;
 }
-function compute2(f) {
+function compute2(f){
 
-    var res = 2;
+ var res = 2;
 
-    f.text.value += res;
+  f.text.value += res;
 }
-function compute3(f) {
+function compute3(f){
 
-    var res = 3;
+ var res = 3;
 
-    f.text.value += res;
+  f.text.value += res;
 }
-function compute5(f) {
+function compute5(f){
 
-    var res = 4;
+ var res = 4;
 
-    f.text.value += res;
-}
-
-function compute6(f) {
-
-    var res = 5;
-
-    f.text.value += res;
-}
-function compute7(f) {
-
-    var res = 6;
-
-    f.text.value += res;
+  f.text.value += res;
 }
 
-function compute9(f) {
 
-    var res = 7;
 
-    f.text.value += res;
+function compute6(f){
+
+ var res = 5;
+
+  f.text.value += res;
 }
-function compute10(f) {
+function compute7(f){
 
-    var res = 8;
+ var res = 6;
 
-    f.text.value += res;
-}
-function compute11(f) {
-
-    var res = 9;
-
-    f.text.value += res;
-}
-function compute13(f) {
-
-    var res = 0;
-
-    f.text.value += res;
+  f.text.value += res;
 }
 
-function compute4(f) {
+function compute9(f){
 
-    var res = "+";
+ var res = 7;
 
-    f.text.value += res;
+  f.text.value += res;
 }
-function compute8(f) {
+function compute10(f){
 
-    var res = "-";
+ var res = 8;
 
-    f.text.value += res;
+  f.text.value += res;
 }
-function compute12(f) {
+function compute11(f){
 
-    var res = "*";
+ var res = 9;
 
-    f.text.value += res;
+  f.text.value += res;
 }
-function compute14(f) {
+function compute13(f){
 
-    var res = "%";
+ var res = 0;
 
-    f.text.value += res;
+  f.text.value += res;
 }
-function compute15(f) {
 
-    var res = "/";
 
-    f.text.value += res;
+function compute4(f){
+
+ var res = "+";
+
+  f.text.value += res;
+}
+function compute8(f){
+
+ var res = "-";
+
+  f.text.value += res;
+}
+function compute12(f){
+
+ var res = "*";
+
+  f.text.value += res;
+}
+function compute14(f){
+
+ var res = "%";
+
+  f.text.value += res;
+}
+function compute15(f){
+
+ var res = "/";
+
+  f.text.value += res;
 }
